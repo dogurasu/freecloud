@@ -1,2 +1,59 @@
 /* Global Elems */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 80%;
+    margin: auto;
+}
 
+/* Utility Classes */
+.logo-detail {
+    color: #5F7CCD;
+}
+
+/* header-top */
+header {
+    background: #2147B3;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul .nav-link {
+    display: inline;
+    margin: 0 5px;
+}
+
+/* showcase-visual */
+#showcase-visual {
+    background: center center/cover url("../img/cloud.jpeg");
+}
+
+#showcase-visual .container-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+#showcase-visual .container-showcase p{
+    width: 60%;
+    text-align: center;
+}
+
+/* showcase-product/users */
+#showcase-product .container,
+#showcase-users .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
