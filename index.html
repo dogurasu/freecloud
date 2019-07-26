@@ -4,63 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="static/img/favicon2.png">
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <title>FreeCloud | Storage done Right</title>
   </head>
   <body>
-    <header id="header-top">
-      <div class="container">
-        <nav>
-          <h3><span class="logo-detail">Free</span>Cloud</h1>
-          <ul>
-            <li class="nav-link">About</li>
-            <li class="nav-link">Pricing</li>
-            <li class="nav-link">Why <span class="logo-detail">Free</span>Cloud?</li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <nav id="header-top">
+      <h3 class="brand"><i class="fab fa-cloudversify"></i><span class="logo-detail">Free</span>Cloud</h1>
+      <ul>
+        <li class="nav-link"><a href="#header-top">Home</a></li>
+        <li class="nav-link"><a href="#about">About</a></li>
+        <li class="nav-link">Pricing</li>
+        <li class="nav-link">Why <i class="fab fa-cloudversify"></i><span class="logo-detail">Free</span>Cloud?</li>
+      </ul>
+    </nav>
     <section id="showcase-visual">
-      <div class="container">
-        <div class="container-showcase">
-          <h1><span class="logo-detail">Free</span>Cloud</h1>
-          <p>FreeCloud is the optimal service for best practices in cloud storage.</p>
-        </div>
+      <div class="showcase-visual-content">
+        <h1 class="brand"><span class="logo-detail">Free</span>Cloud</h1>
+        <p><span class="logo-detail">Free</span>Cloud is the optimal service for best practices in cloud storage.</p>
       </div>
     </section>
-    <section id="showcase-product">
-      <div class="container clouds">
-        <img src="" style="width: 500px;">
-        <p class='pic-desc'>Store anything, anywhere with ease and lease.</p>
+    <section id="about">
+      <h3 class="section-title">About</h3>
+      <div class="container about-container">
+        <img class="about-img1" src="static/img/bmeeting.jpeg" style="width: 500px;">
+        <div class="desc-container">
+          <h4>Work with the Best.</h4>  
+          <p class='pic-desc'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, debitis quos, consequuntur eius dignissimos facilis incidunt quibusdam similique harum dolorum explicabo optio quidem. Et, reiciendis illo. Provident excepturi fugiat eligendi?</p>
+        </div>
+        <div class="desc-container">
+          <h4>You're in good hands.</h4>
+          <p class='pic-desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptas assumenda harum ea non odit aut perferendis. In quos libero atque, quasi autem fuga ullam ratione commodi perspiciatis? Vel, adipisci.</p>
+        </div>
+        <img class="about-img2" src="static/img/millenials.jpeg" style="width: 500px;">
       </div>
-      <div class="container users">
-        <img src="static/img/millenials.jpeg" style="width: 500px;">
-        <p class='pic-desc'>Store anything, anywhere with ease and lease.</p>
+    </div>
+    </section>
+    <section id="users">
+      <div class="container">
+        <h3 class="section-title">Our Clients</h3>
+        <div class="user-container">
+          <i class="fab fa-wordpress fa-8x"></i>
+          <i class="fab fa-reddit fa-8x"></i>
+          <i class="fab fa-pied-piper-pp fa-8x"></i>
+          <i class="fab fa-google fa-8x"></i>
+        </div>
       </div>
     </section>
     <section id="contact">
       <div class="container">
-        <h3>Contact Us</h3>
-        <form>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email">
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows=10></textarea>
-          <button class="btn btn-submit" type="submit">Submit</button>
-        </form>
+        <div class="form-container">
+          <h3 class="section-title">Contact Us</h3>
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject">
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows=10></textarea>
+            </div>
+            <button class="btn btn-submit" type="submit">Submit</button>
+          </form>
+        </div>
       </div>
     </section>
     <footer id="footer-bottom">
       <div class="container">
         <p>
-          <span class="logo-detail">Free</span>Cloud &copy; 2019
+          <i class="fab fa-cloudversify"></i><span class="logo-detail">Free</span>Cloud &copy; 2019
         </p>
     </div>
     </footer>
+    <script src="https://kit.fontawesome.com/75541eca63.js"></script>
   </body>
 </html>

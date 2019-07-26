@@ -1,59 +1,216 @@
+:root {
+  --primary-bg-color: #3A3C40;
+  --primary-logo-color: #819DD5;
+  --secondary-bg-color: #f4f4f4;
+}
+
 /* Global Elems */
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background: var(--secondary-bg-color)
 }
 .container {
-    max-width: 80%;
-    margin: auto;
+  max-width: 1160px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
+}
+
+.fa-cloudversify {
+  padding: 5px;
+}
+
+.section-title {
+  margin-left: 10px;
+  text-align: center;
+  font-size: 2.8rem;
 }
 
 /* Utility Classes */
 .logo-detail {
-    color: #5F7CCD;
+  color: var(--primary-logo-color);
+}
+
+.brand {
+  color: white;
 }
 
 /* header-top */
-header {
-    background: #2147B3;
-}
-nav {
-    display: flex;
-    justify-content: space-between;
-    
-}
-
-nav ul {
-    list-style: none;
+#header-top {
+  background-color: var(--primary-bg-color);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
 }
 
-nav ul .nav-link {
-    display: inline;
-    margin: 0 5px;
+#header-top .brand {
+  padding-left: 1.5rem;
+}
+
+#header-top ul {
+  list-style: none;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+#header-top ul .nav-link {
+  display: inline;
+  margin: 0 5px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+#header-top ul .nav-link a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fff;
 }
 
 /* showcase-visual */
 #showcase-visual {
-    background: center center/cover url("../img/cloud.jpeg");
+  background: #333 no-repeat center center/cover url("../img/clouds2.jpeg");
+  height: 100fvh;
 }
 
-#showcase-visual .container-showcase {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
+#showcase-visual .showcase-visual-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* Overlay */
 }
 
-#showcase-visual .container-showcase p{
-    width: 60%;
-    text-align: center;
+#showcase-visual .showcase-visual-content h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
 }
 
-/* showcase-product/users */
-#showcase-product .container,
-#showcase-users .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+#showcase-visual .showcase-visual-content p{
+  width: 60%;
+  text-align: center;
+  font-size: 2rem;
+  color: #000;
+}
+
+/* about */
+#about {
+  background: var(--primary-bg-color);
+  color: #fff;
+  overflow: hidden;
+  padding-bottom: 3rem;
+}
+
+#about h3 {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--primary-logo-color);
+}
+
+#about .about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  justify-items: center;
+  align-items: center;
+}
+
+#about .about-container .desc-container h4 {
+  color: var(--primary-logo-color);
+  font-size: 1.4rem;
+}
+
+#about .about-container img {
+  border-radius: 5px;
+}
+
+#about .about-container .about-img2 {
+  padding-left: .5rem;
+  padding-top: 2rem;
+}
+
+#about .about-container .desc-container {
+  max-width: 80%;
+}
+
+#about .about-container .desc-container .pic-desc {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* users */
+#users .container .user-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+/* Contact form */
+#contact {
+  background: var(--primary-logo-color);
+}
+
+#contact .form-container {
+  width: 700px;
+  margin: auto;
+  background-color: var(--secondary-bg-color);
+  margin-bottom: 2.6rem;
+  border-radius: 5px;
+  overflow: none;
+}
+
+#contact .form-container .section-title {
+  padding-top: 1rem;
+}
+
+#contact .form-container form {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  align-items: center;
+}
+
+#contact .form-container form .form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 80%;
+}
+
+#contact .form-container form .form-group input,
+#contact .form-container form .form-group textarea {
+  padding: 7px;
+}
+
+.btn-submit {
+  padding: .5rem 0;
+  width: 50%;
+  background: var(--primary-bg-color);
+  color: #fff;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+/* Footer-Bottom */
+#footer-bottom {
+  background: var(--primary-bg-color);
+  color: #fff;
+  height: 100px;
+  text-align: center;
+}
+
+#footer-bottom .container {
+  padding-top: 20px;
+  font-size: 1.3rem;
 }
