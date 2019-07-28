@@ -1,0 +1,38 @@
+
+/* Small Smartphones */
+@media(max-width: 380px) {
+  #header-top h3 {
+    font-size: 100rem;
+  }
+  #header-top ul .nav-link {
+    font-size: 1rem;
+  }
+}
+
+/* Tablets */
+@media(max-width: 700px) {
+  #header-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #header-top h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+
+  #header-top .brand {
+    padding-left: 0;
+  }
+
+  #header-top ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+  #header-top ul .nav-link {
+    padding-bottom: 1rem;
+  }
+}
